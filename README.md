@@ -262,6 +262,14 @@ La configuration des pairs est identique à Linux.
 ```
 > remplacer la ligne 2 par l'executable de votre Wireguard
 
+Configuration de la NAT:
+
+Dans le powershell:
+```bash
+Set-NetConnectionSharing "wg_server" $true
+```
+
+
 Nous allons maintenant enregistrer ce script sous `start_server.bat`
 
 - Pour arreter le serveur:
